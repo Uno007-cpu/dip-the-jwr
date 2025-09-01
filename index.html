@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dipp the Jwr. Co. Za - Real stories about cyberbullying and GBV awareness in South Africa">
-    <meta name="keywords" content="cyberbullying, GBV, South Africa, awareness, stories">
-    <title>Dipp the Jwr. Co. Za - Cyberbullying and GBV Awareness</title>
+    <title>Dipp the Jwr - Cyberbullying Awareness</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* Global Styles */
@@ -45,14 +43,14 @@
         }
         
         nav li {
-            margin: 0 15px;
+            margin: 0 20px;
         }
         
         nav a {
             color: white;
             text-decoration: none;
             font-weight: 500;
-            padding: 5px 10px;
+            padding: 8px 15px;
             border-radius: 4px;
             transition: background 0.3s;
         }
@@ -196,43 +194,6 @@
             border-radius: 0 8px 8px 0;
         }
         
-        /* Story Cards */
-        .story-cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-            margin: 30px 0;
-        }
-        
-        .story-card {
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
-        
-        .story-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .card-content {
-            padding: 20px;
-        }
-        
-        .card-content h3 {
-            color: #2575fc;
-            margin-bottom: 10px;
-        }
-        
-        .read-more {
-            display: inline-block;
-            margin-top: 10px;
-            color: #ff6b6b;
-            font-weight: bold;
-            text-decoration: none;
-        }
-        
         /* Resources Section */
         .resources {
             background: #e8f4f8;
@@ -333,10 +294,6 @@
             article {
                 padding: 20px;
             }
-            
-            .story-cards {
-                grid-template-columns: 1fr;
-            }
         }
         
         /* Visual Elements */
@@ -428,41 +385,6 @@
             background: #ff6b6b;
         }
         
-        .gbv-headlines {
-            background: #fff0f0;
-            border-radius: 10px;
-            padding: 25px;
-            margin: 30px 0;
-        }
-        
-        .gbv-headlines h2 {
-            color: #ff6b6b;
-            text-align: center;
-        }
-        
-        .headline-list {
-            list-style-type: none;
-            margin: 20px 0;
-        }
-        
-        .headline-list li {
-            padding: 15px;
-            border-bottom: 1px solid #ffcccc;
-            position: relative;
-            padding-left: 30px;
-        }
-        
-        .headline-list li:before {
-            content: "⚡";
-            position: absolute;
-            left: 5px;
-            color: #ff6b6b;
-        }
-        
-        .headline-list li:last-child {
-            border-bottom: none;
-        }
-        
         /* Form Styles */
         .form-container {
             background: white;
@@ -541,16 +463,35 @@
             cursor: pointer;
             font-size: 1.5rem;
         }
+        
+        /* Definition Box */
+        .definition-box {
+            background: #f0f7ff;
+            border-left: 5px solid #2575fc;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .definition-box h3 {
+            color: #2575fc;
+            margin-top: 0;
+        }
+
+        /* X Logo Fix */
+        .x-logo {
+            font-family: sans-serif;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
     <nav>
         <ul>
             <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#definition">What is Cyberbullying?</a></li>
             <li><a href="#silindile">Silindile's Story</a></li>
-            <li><a href="#gbv">GBV Stories</a></li>
-            <li><a href="#share">Share Your Story</a></li>
-            <li><a href="#resources">Resources</a></li>
+            <li><a href="#resources">Get Help</a></li>
         </ul>
     </nav>
     
@@ -559,7 +500,7 @@
             <div class="cover-image">
                 <div class="cover-content">
                     <div class="cover-title">Dipp the Jwr</div>
-                    <div class="cover-subtitle">Breaking the Silence</div>
+                    <div class="cover-subtitle">Breaking the Silence on Cyberbullying</div>
                     <div class="cover-byline">Real People, Real Stories</div>
                 </div>
             </div>
@@ -573,10 +514,10 @@
         
         <div class="social-sharing">
             <p>Share to raise awareness:</p>
-            <a href="#" class="social-btn facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-btn twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" class="social-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=example.com" class="social-btn facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/intent/tweet?text=Cyberbullying Awareness&url=example.com" class="social-btn twitter"><span class="x-logo">X</span></a>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=example.com" class="social-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://wa.me/?text=Check out this cyberbullying awareness website: example.com" class="social-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
         </div>
         
         <div class="stats-box">
@@ -586,10 +527,29 @@
             <p>Girls are twice as likely to be victims of cyberbullying</p>
         </div>
         
+        <article id="definition">
+            <div class="story-section">
+                <h2>What is Cyberbullying?</h2>
+                <div class="definition-box">
+                    <h3>Cyberbullying Definition</h3>
+                    <p>Cyberbullying is the use of digital technologies, including social media, messaging platforms, gaming platforms, and mobile phones, to bully, harass, threaten, embarrass, or target another person. It includes sending, posting, or sharing negative, harmful, false, or mean content about someone else, often repeatedly.</p>
+                </div>
+                
+                <h3>Common Forms of Cyberbullying:</h3>
+                <ul>
+                    <li><strong>Harassment:</strong> Repeatedly sending offensive, rude, and insulting messages</li>
+                    <li><strong>Denigration:</strong> Spreading rumors or sharing embarrassing information online</li>
+                    <li><strong>Impersonation:</strong> Pretending to be someone else and sending or posting material to damage that person's reputation</li>
+                    <li><strong>Outing:</strong> Sharing someone's secrets or embarrassing information online</li>
+                    <li><strong>Exclusion:</strong> Intentionally excluding someone from online groups or activities</li>
+                </ul>
+            </div>
+        </article>
+        
         <article id="silindile">
             <div class="story-section">
                 <h2>The Beginning</h2>
-                <p>Silindile had always been the kind of student teachers noticed — not because she sought attention, but because of her quiet determination. She loved science, dreamed of becoming a doctor one day, and often helped her classmates with homework. Her confidence showed in the way she carried herself, until one day, it all began to change.</p>
+                <p>Silindile had always been the kind of student teachers noticed,not because she sought attention, but because of her quiet determination. She loved science, dreamed of becoming a doctor one day, and often helped her classmates with homework. Her confidence showed in the way she carried herself, until one day, it all began to change.</p>
             </div>
             
             <div class="story-section">
@@ -605,7 +565,7 @@
             
             <div class="story-section">
                 <h2>Seeking Help</h2>
-                <p>One afternoon, after a particularly cruel post spread through her grade, Silindile couldn't take it anymore. She broke down in tears in front of her favorite teacher, who immediately sat her down. For the first time, Silindile let the words pour out — the shame, the anger, the hopelessness. Her teacher didn't just listen, she acted. Together, they reported the accounts, blocked the bullies, and reached out to the school's counselor. Silindile also called a youth support hotline, where someone on the other end reminded her that she wasn't alone, and that healing was possible.</p>
+                <p>One afternoon, after a particularly cruel post spread through her grade, Silindile couldn't take it anymore. She broke down in tears in front of her favorite teacher, who immediately sat her down. For the first time, Silindile let the words pour out the shame, the anger, the hopelessness. Her teacher didn't just listen, she acted. Together, they reported the accounts, blocked the bullies, and reached out to the school's counselor. Silindile also called a youth support hotline, where someone on the other end reminded her that she wasn't alone, and that healing was possible.</p>
                 
                 <p>It took time, but Silindile began to rebuild. She leaned on her true friends, opened up to her family, and learned strategies to protect herself online. Most importantly, she realized that the cruel words said about her were never a reflection of her worth.</p>
             </div>
@@ -615,26 +575,12 @@
                 <p>Her story is not just one of pain, but of resilience. It is a reminder that cyberbullying is real, damaging, and often hidden. But it's also a reminder that speaking up can change everything. By standing together, showing kindness, and calling out cruelty, we can make the digital world safer for everyone.</p>
             </div>
             
-            <div class="social-sharing">
-                <p>Share Silindile's story to raise awareness:</p>
-                <a href="#" class="social-btn facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social-btn twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="social-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" class="social-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
+            <div class="cta">
+                <h2>Have a story to share?</h2>
+                <p>Your experience could help others feel less alone and encourage them to seek help.</p>
+                <a href="#share" class="cta-button">Share Your Story</a>
             </div>
         </article>
-        
-        <div class="gbv-headlines" id="gbv">
-            <h2>GBV Stories: Real People, Real Experiences</h2>
-            <ul class="headline-list">
-                <li><strong>Nomalanga's Escape:</strong> After 8 years of marriage, Nomalanga found the courage to leave her abusive husband and start over with her two children.</li>
-                <li><strong>Thando's Journey:</strong> Thando survived childhood sexual abuse and now helps other young women heal through art therapy.</li>
-                <li><strong>Lerato's Strength:</strong> Lerato fought back against workplace sexual harassment and now advocates for safer environments for women.</li>
-                <li><strong>Zanele's Victory:</strong> After years of emotional abuse, Zanele found the strength to leave and rebuild her life with her children.</li>
-                <li><strong>Amahle's Courage:</strong> Amahle spoke out against her attacker and now runs a support group for other survivors.</li>
-            </ul>
-            <p class="cta">If you have a story to share, you could help others feel less alone. <a href="#share" class="read-more">Share your story anonymously</a></p>
-        </div>
         
         <div class="form-container" id="share">
             <h2>Share Your Story</h2>
@@ -649,16 +595,6 @@
                 <div class="form-group">
                     <label for="email">Email (optional):</label>
                     <input type="email" id="email" name="email">
-                </div>
-                
-                <div class="form-group">
-                    <label for="story-type">Type of Story:</label>
-                    <select id="story-type" name="story-type">
-                        <option value="">Select one...</option>
-                        <option value="cyberbullying">Cyberbullying</option>
-                        <option value="gbv">Gender-Based Violence</option>
-                        <option value="other">Other</option>
-                    </select>
                 </div>
                 
                 <div class="form-group">
@@ -679,24 +615,31 @@
         
         <div class="resources" id="resources">
             <h2>Need Help? Resources Available</h2>
-            <p>If you or someone you know is experiencing cyberbullying or GBV, help is available:</p>
+            <p>If you or someone you know is experiencing cyberbullying, help is available:</p>
             <ul>
-                <li><strong>Cyberbullying Support:</strong> Report to platform administrators and block abusive accounts</li>
-                <li><strong>GBV Command Centre:</strong> Call 0800 428 428 or dial *120*7867#</li>
+                <li><strong>Report to Platforms:</strong> Use reporting tools on social media platforms</li>
+                <li><strong>Block Abusive Accounts:</strong> Prevent further contact from bullies</li>
+                <li><strong>Childline South Africa:</strong> 116 (free from any phone)</li>
                 <li><strong>Lifeline:</strong> 0861 322 322</li>
-                <li><strong>Childline:</strong> 116 (free from any phone)</li>
                 <li><strong>South African Police Service:</strong> 10111</li>
             </ul>
             <p>Remember, you are not alone, and there are people who want to help.</p>
+        </div>
+        
+        <div class="social-sharing">
+            <p>Share this website to raise awareness:</p>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=example.com" class="social-btn facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/intent/tweet?text=Cyberbullying Awareness&url=example.com" class="social-btn twitter"><span class="x-logo">X</span></a>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=example.com" class="social-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://wa.me/?text=Check out this cyberbullying awareness website: example.com" class="social-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
         </div>
     </div>
     
     <footer>
         <div class="container">
             <h3>About Dipp the Jwr Co. Za</h3>
-            <p>We are a South African nonprofit dedicated to raising awareness about cyberbullying and GBV through storytelling, education, and support services.</p>
+            <p>We are a South African nonprofit dedicated to raising awareness about cyberbullying through storytelling, education, and support services.</p>
             <p>© 2023 Dipp the Jwr Co. Za | Real People, Real Stories</p>
-            <p>Email us: info@dippthejwr.co.za | Follow us on social media</p>
         </div>
     </footer>
     
@@ -705,7 +648,6 @@
             <span class="close-modal">&times;</span>
             <h2>Thank You For Sharing</h2>
             <p>Your story has been received. By sharing your experience, you're helping raise awareness and might be helping someone feel less alone.</p>
-            <p>If you requested assistance, we'll be in touch within 48 hours.</p>
             <button class="cta-button" id="modalClose">Close</button>
         </div>
     </div>
@@ -772,15 +714,6 @@
                     thankYouModal.style.display = 'none';
                 }
             });
-            
-            // Social sharing functionality
-            const currentUrl = encodeURIComponent(window.location.href);
-            const title = encodeURIComponent(document.title);
-            
-            document.querySelector('.facebook').href = https://www.facebook.com/sharer/sharer.php?u=${currentUrl};
-            document.querySelector('.twitter').href = https://twitter.com/intent/tweet?text=${title}&url=${currentUrl};
-            document.querySelector('.linkedin').href = https://www.linkedin.com/sharing/share-offsite/?url=${currentUrl};
-            document.querySelector('.whatsapp').href = https://wa.me/?text=${title} ${currentUrl};
         });
     </script>
 </body>
